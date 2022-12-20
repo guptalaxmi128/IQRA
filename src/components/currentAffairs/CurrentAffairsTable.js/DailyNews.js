@@ -15,10 +15,10 @@ const DailyNews = () => {
               <Grid item xs={12}>
                 <Box className="box">
                   <i data-feather="globe"></i>
-                  <Link to="/dailyNews/28Sep">28 September 2022</Link>
+                  <Link to="/dailyNews/28Sep">15 Dec - 21 Dec </Link>
                 </Box>
               </Grid>
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <Box className="box">
                   <Link to="/dailyNews/28Sep">
                     {" "}
@@ -80,7 +80,7 @@ const DailyNews = () => {
                     <i data-feather="globe"></i> 28 September 2022
                   </Link>
                 </Box>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Box>
         </ul>

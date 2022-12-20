@@ -174,12 +174,14 @@ const Articles = () => {
                 </Box>
                   <Box sx={{ padding: "20px" }} mb={5}>
                     <p>
-                      <strong>For Prelims:</strong> National Clean Air
-                      Programme, World Bank
+                      <strong>For Prelims:</strong>
+                        {
+                        item.prelims
+                      }
                     </p>
                     <p>
-                      <strong> For Mains: </strong> Environmental Pollution &
-                      Degradation
+                      <strong> For Mains: </strong>
+                       {item.mains}
                     </p>
                   </Box>
                 </Box>
@@ -194,7 +196,7 @@ const Articles = () => {
                   <Box sx={{ padding: "20px" }} mb={3}>
                     <h5>Why in News?</h5>
                     <p>
-                      Recently, the{" "}
+                      {item.dataFromEditor}
                       <a
                         href="https://www.google.com/search?q=world+bank+drishti+ias&amp;rlz=1C1VDKB_enIN1009IN1009&amp;oq=World+Bank+dri&amp;aqs=chrome.1.69i57j69i59.2098j0j7&amp;sourceid=chrome&amp;ie=UTF-8"
                         target="_blank"
@@ -350,13 +352,13 @@ const Articles = () => {
                         calculating the value of Air Quality Index? (2016) */}
                       </strong>
                     </p>
-                    <ol>
+                    {/* <ol>
                       <li> Carbon dioxide </li>
                       <li>Carbon monoxide</li>
                       <li>Nitrogen dioxide</li>
                       <li>Sulfur dioxide</li>
                       <li>Methane</li>
-                    </ol>
+                    </ol> */}
                     <p>Select the correct answer using the code given below:</p>
                     <p>
                       <strong>(a)</strong> {item.options.optionA} <br />
@@ -375,7 +377,7 @@ const Articles = () => {
                         </span>
                       </em>
                     </h6>
-                    <p>
+                    {/* <p>
                       <p>
                         Q. Describe the key points of the revised Global Air
                         Quality Guidelines (AQGs) recently released by the World
@@ -385,7 +387,7 @@ const Articles = () => {
                         revised standards?
                         <strong>(2016)</strong>
                       </p>
-                    </p>
+                    </p> */}
                   </Box>
                 </Box>
                 </AccordionDetails>
